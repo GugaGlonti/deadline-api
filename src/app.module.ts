@@ -27,8 +27,4 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {
-  constructor() {
-    console.log(process.env.POSTGRES_DB);
-  }
-}
+export class AppModule {}
