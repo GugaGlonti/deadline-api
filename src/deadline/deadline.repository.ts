@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Deadline } from './Deadline.entity';
+import { Deadline } from './entities/Deadline.entity';
 import { AddDeadlineDto } from './dto/addDeadline.dto';
 
 @Injectable()
