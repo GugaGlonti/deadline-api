@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { DeadlineModule } from './deadline/deadline.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { DeadlineModule } from './deadline/deadline.module';
       }),
     }),
     DeadlineModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
